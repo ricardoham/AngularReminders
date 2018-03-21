@@ -1,0 +1,26 @@
+<section>
+  <article>
+    <h3>Input/Output Properties</h3>
+    
+    <div>
+      <input type="text"
+        [value]="nome"
+        (input)="nome = $event.target.value"
+      />
+
+      <input type="text"
+      [ngModel]="nome"
+      (ngModelChange)="nome = $event"
+    />
+
+    <input type="text" [(ngModel)]="nome"  />
+
+    <p>meu nome {{ pessoa.nome }} e idade {{pessoa.idade}}</p>
+    <input type="text" [(ngModel)]="pessoa.nome">
+    <input type="text" [(ngModel)]="pessoa.idade">
+      <p>Você digitou {{nome}}</p>
+    </div>
+
+    <app-curso></app-curso>
+  </article>
+</section>
