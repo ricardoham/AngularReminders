@@ -1,0 +1,9 @@
+<h3>Diretiva ngFor</h3>
+<!-- 
+também pode receber indice -->
+
+<ul>
+  <li *ngFor="let curso of cursos, let i=index">
+  {{ i }} {{ curso }}
+  </li>
+</ul>
